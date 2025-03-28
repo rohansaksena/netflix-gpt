@@ -5,14 +5,12 @@ import { checkValidData } from '../utils/validate';
 import { useRef } from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile} from "firebase/auth"
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
 
 
 function Login() {
 
-    const navigate =useNavigate()
     const [isSignInForm, setIsSignInForm] = useState(true);
     const [errorMessage, setErrorMesssage] = useState(null);
 
@@ -69,9 +67,6 @@ function Login() {
 
   return (
     <div>
-        <div>
-        <Header/>
-        </div>
         <div className='absolute'>
             <img src={backgroundNetfliximg}/>
         </div>

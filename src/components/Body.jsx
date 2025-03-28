@@ -2,15 +2,18 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Browse from './Browse'
 import Login from './Login'
 import Error from './Error'
+import GPTSearch from './GPTSearch'
+import Layout from './Layout'
 
 function Body() {
 
     const router = createBrowserRouter(
         createRoutesFromElements(
-            <Route>
-            <Route path='/' element={<Login/>}/>    
+            <Route path='/' element={<Layout/>}> 
+            <Route path='' element={<Login/>}/>   
             <Route path='browse' element={<Browse/>}/>
             <Route path='error' element={<Error/>}/>
+            <Route path='gpt' element={<GPTSearch/>}/>
             </Route>
         )
     )
