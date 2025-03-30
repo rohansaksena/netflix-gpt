@@ -21,5 +21,5 @@ export const useNowPlayingMovies = () => {
 
     useEffect(() => {
         getNowPlayingMovies();
-    }, [dispatch]); // Including dispatch as a dependency to follow best practices
+    }, [dispatch]); 
 };

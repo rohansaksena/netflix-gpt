@@ -1,5 +1,5 @@
 import React from 'react'
-import netflixLogo from '../assets/Netflix_Logo_PMS.png'
+import Logo from '../assets/Netflix_Logo_PMS.png'
 import userIcon from '../assets/userIcon.jpeg'
 import {signOut} from "firebase/auth"
 import { auth } from '../utils/firebase'
@@ -55,7 +55,7 @@ function Header() {
   return (
     <div className='w-screen px-8 py-2 bg-gradient-to-b from-black absolute z-20 flex justify-between'>
       <Link to="/browse">
-          <img className='w-52' src={netflixLogo}/>
+            {<img className='w-52' src={Logo}/>}
       </Link>
       
         {user && 

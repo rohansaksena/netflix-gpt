@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import GPTSearchBar from './GPTSearchBar'
 import backgroundNetfliximg from '../assets/NetflixBackground.jpg'
+import GPTSuggestions from './GPTSuggestions'
 
 
 function GPTSearch() {
@@ -19,8 +20,9 @@ function GPTSearch() {
 
   return (
     <div>
-        <img src={backgroundNetfliximg} className='absolute -z-20'/>
+        <img src={backgroundNetfliximg} className='fixed -z-20'/>
         <GPTSearchBar/>
+        <GPTSuggestions/>
     </div>
   )
 }
